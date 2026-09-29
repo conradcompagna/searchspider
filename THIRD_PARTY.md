@@ -11,4 +11,4 @@ searchspider uses upstream libraries and models; their authors retain their copy
 | FastAPI, React, TypeScript and Vite | HTTP service and browser interface | Dependencies and versions in `requirements.txt` and `frontend/package-lock.json` |
 | Google Gen AI SDK | Optional Gemini calls | [python-genai](https://github.com/googleapis/python-genai) |
 
-Model weights and original book files are not bundled. The source corpus has its own bibliographic provenance and rights, described in [docs/DATA.md](docs/DATA.md). No repository-wide license is assigned to the source books, translations or upstream models by this publication.
+Model weights and original book files are not bundled. The source corpus has its own bibliographic provenance and rights, described in the [README](README.md#data-and-models). No repository-wide license is assigned to the source books, translations or upstream models by this publication.

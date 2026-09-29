@@ -1,4 +1,4 @@
-# Evaluation: retrieval quality, evidence recovery and design decisions
+# Evaluation
 
 This package reports the last completed local evaluation rounds dated **27 September 2026**. It preserves their questions, counts and ranking evidence while separating runs that used different plans, selectors or scoring rules. Source artifacts and SHA-256 hashes are listed in [evaluation/provenance.json](evaluation/provenance.json).
 
@@ -98,4 +98,4 @@ Evidence: [configuration totals](evaluation/reranker/configurations.csv), [per-q
 
 ## Evaluation records
 
-The linked result files contain test questions, document ranks, relevance labels, configuration comparisons and timing measurements. The provenance manifest records the source artifacts for each evaluation round, and the [data guide](../docs/DATA.md) describes the corpus.
+The linked result files contain test questions, document ranks, relevance labels, configuration comparisons and timing measurements. The provenance manifest records the source artifacts for each evaluation round, and the corpus is described in the [root README](../README.md#data-and-models).

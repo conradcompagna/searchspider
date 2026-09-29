@@ -6,7 +6,7 @@ English search across Than Tun's *Royal Orders of Burma* (Parts 3–9) and the *
 
 I built SearchSpider to help historians assemble evidence across a large, uneven archive: royal labour, hydraulic works, money and debt, captive populations, diplomacy and kingship. The engineering addresses a general document-search problem: retrieve broadly, rank the evidence that a bounded model budget can actually read, and preserve the route back to each source.
 
-**[Live application](https://burmeseneuralreader.com/searchspider/)** · [Evaluation results](research/EVALUATION.md) · [Architecture](docs/ARCHITECTURE.md)
+**[Live application](https://burmeseneuralreader.com/searchspider/)** · [Evaluation results](research/README.md)
 
 ## From a question to inspectable evidence
 
@@ -43,7 +43,7 @@ I evaluated **document finding and evidence collection** through targeted questi
 
 In the six-topic evidence hunt, SearchSpider recovered **1,995 of 2,067 marked question-document pairs** and placed **234 reference matches in the first 300 assessment slots**. This tests the complete evidence-gathering workflow: finding the designated material, ranking it and selecting what the agent reads first.
 
-Evaluation also shaped the architecture. Continuing down the existing ranking recovered **173 additional reference matches**, compared with **153** from another query-generation round. CPU cross-encoder trials added latency without improving recovery across the agentic reading sequence. The deployed pipeline therefore uses **hybrid ranking with continued reading**, keeping model calls focused on planning, evidence assessment and synthesis. [Evaluation methods and reranker comparisons](research/EVALUATION.md).
+Evaluation also shaped the architecture. Continuing down the existing ranking recovered **173 additional reference matches**, compared with **153** from another query-generation round. CPU cross-encoder trials added latency without improving recovery across the agentic reading sequence. The deployed pipeline therefore uses **hybrid ranking with continued reading**, keeping model calls focused on planning, evidence assessment and synthesis. [Evaluation methods and reranker comparisons](research/README.md).
 
 ## Engineering highlights
 
@@ -53,7 +53,7 @@ Evaluation also shaped the architecture. Continuing down the existing ranking re
 - **Evaluation-led simplification:** query replanning, graph gathering and cross-encoder reranking were tested; features were retained or removed according to measured evidence, runtime cost and implementation reliability.
 - **Deployed application:** FastAPI backend, React/TypeScript interface, local corpus and embedding indexes, source filters, an inspectable search trail and regression tests.
 
-The archive-specific pieces are the document adapters, historical names and evaluation questions. Hybrid search, query planning, evidence selection, provider integration, cost controls and ranked-list evaluation transfer to enterprise search, research assistance and document intelligence. The [architecture guide](docs/ARCHITECTURE.md) makes those boundaries explicit.
+The archive-specific pieces are the document adapters, historical names and evaluation questions. Hybrid search, query planning, evidence selection, provider integration, cost controls and ranked-list evaluation transfer to enterprise search, research assistance and document intelligence.
 
 ## Explore the code and evidence
 
@@ -62,9 +62,22 @@ The archive-specific pieces are the document adapters, historical names and eval
 | Candidate retrieval and hybrid ranking | [backend/search.py](backend/search.py), [backend/search_settings.py](backend/search_settings.py) |
 | Planning, assessment, synthesis and continued reading | [backend/dossier.py](backend/dossier.py), [Gemini client](backend/spider.py) |
 | HTTP service and access control | [backend/app.py](backend/app.py) |
-| Hosted AI budgets and subscription integration | [backend/access.py](backend/access.py), [bridge source](deploy/language_engine/), [access guide](docs/ACCESS.md) |
+| Account access and usage limits | [backend/access.py](backend/access.py), [Language Engine account bridge](deploy/language_engine/) |
 | Browser experience | [frontend/src/](frontend/src/) |
 | Corpus preparation and CPU embeddings | [scripts/](scripts/), [backend/corpus.py](backend/corpus.py), [backend/embed.py](backend/embed.py) |
 | Regression coverage | [tests/](tests/) |
-| Evaluation story and model-selection decisions | [research/EVALUATION.md](research/EVALUATION.md), [research/evaluation/](research/evaluation/) |
-| Data provenance | [docs/DATA.md](docs/DATA.md) |
+| Evaluation and model-selection decisions | [research/README.md](research/README.md), [research/evaluation/](research/evaluation/) |
+
+## Data and models
+
+The collection combines Than Tun's *Royal Orders of Burma*, Parts 3–9, and the three
+volumes of the *Konbaungset Yazawin*. Search runs over English text; the Burmese text
+is kept for reading. The book texts, model weights, production databases and API keys
+are not included in this repository. The source works, translations and upstream
+models keep their own rights and terms.
+
+Passage embeddings use a quantized ONNX export of
+[intfloat/multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small)
+([Xenova export](https://huggingface.co/Xenova/multilingual-e5-small)); no model was
+trained for this project. English stemming uses Snowball (Porter2) and the stopword list
+is Apache Lucene's `EnglishAnalyzer`. See [THIRD_PARTY.md](THIRD_PARTY.md).
