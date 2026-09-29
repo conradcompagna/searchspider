@@ -1,0 +1,106 @@
+{
+  "source": "eval/recursive_once_20260927/metrics.json",
+  "reference_documents": 2067,
+  "totals": {
+    "pool": {
+      "documents": 15044,
+      "fully_relevant": 1712,
+      "partly_relevant": 283,
+      "known_relevant": 1995,
+      "unlabelled": 13049,
+      "known_relevant_fraction": 0.13261100771071524,
+      "reference_recall": 0.965166908563135
+    },
+    "initial50": {
+      "documents": 300,
+      "fully_relevant": 220,
+      "partly_relevant": 14,
+      "known_relevant": 234,
+      "unlabelled": 66,
+      "known_relevant_fraction": 0.78,
+      "reference_recall": 0.11320754716981132
+    },
+    "recursive50": {
+      "documents": 300,
+      "fully_relevant": 132,
+      "partly_relevant": 21,
+      "known_relevant": 153,
+      "unlabelled": 147,
+      "known_relevant_fraction": 0.51,
+      "reference_recall": 0.07402031930333818
+    },
+    "seen100": {
+      "documents": 600,
+      "fully_relevant": 352,
+      "partly_relevant": 35,
+      "known_relevant": 387,
+      "unlabelled": 213,
+      "known_relevant_fraction": 0.645,
+      "reference_recall": 0.18722786647314948
+    },
+    "gemini_kept": {
+      "documents": 510,
+      "fully_relevant": 345,
+      "partly_relevant": 34,
+      "known_relevant": 379,
+      "unlabelled": 131,
+      "known_relevant_fraction": 0.7431372549019608,
+      "reference_recall": 0.1833575229801645
+    },
+    "gemini_dropped": {
+      "documents": 90,
+      "fully_relevant": 7,
+      "partly_relevant": 1,
+      "known_relevant": 8,
+      "unlabelled": 82,
+      "known_relevant_fraction": 0.08888888888888889,
+      "reference_recall": 0.0038703434929850023
+    },
+    "no_new_queries_next50": {
+      "documents": 300,
+      "fully_relevant": 147,
+      "partly_relevant": 26,
+      "known_relevant": 173,
+      "unlabelled": 127,
+      "known_relevant_fraction": 0.5766666666666667,
+      "reference_recall": 0.08369617803580068
+    },
+    "no_new_queries_seen100": {
+      "documents": 600,
+      "fully_relevant": 367,
+      "partly_relevant": 40,
+      "known_relevant": 407,
+      "unlabelled": 193,
+      "known_relevant_fraction": 0.6783333333333333,
+      "reference_recall": 0.196903725205612
+    },
+    "original_ranks51_100": {
+      "documents": 300,
+      "fully_relevant": 148,
+      "partly_relevant": 26,
+      "known_relevant": 174,
+      "unlabelled": 126,
+      "known_relevant_fraction": 0.58,
+      "reference_recall": 0.0841799709724238
+    },
+    "previous_winner50": {
+      "documents": 300,
+      "fully_relevant": 225,
+      "partly_relevant": 15,
+      "known_relevant": 240,
+      "unlabelled": 60,
+      "known_relevant_fraction": 0.8,
+      "reference_recall": 0.11611030478955008
+    }
+  },
+  "recursion_gain_over_next50": -20,
+  "usage": {
+    "in": 195107,
+    "out": 35445,
+    "think": 0,
+    "calls": 42,
+    "total_tokens": 230552
+  },
+  "caveat": "Positive-reference coverage, not exhaustive precision: unlisted documents are unlabelled, not known irrelevant.",
+  "note": "Historical unread selector yielded 407 known references at 100 total documents per question. Later full-pool-normalized fixed ordering yields 408; these are distinct selectors, not a transcription error."
+}

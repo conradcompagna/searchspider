@@ -1,0 +1,60 @@
+{"tid": "T01", "theme": "administration", "question": "How did the crown appoint and replace town and provincial officers?", "split": "test"}
+{"tid": "T02", "theme": "administration", "question": "What duties and powers did the Hluttaw have in handling petitions and royal business?", "split": "test"}
+{"tid": "T03", "theme": "administration", "question": "How were royal orders transmitted and proclaimed to officials and the public?", "split": "test"}
+{"tid": "T04", "theme": "administration", "question": "Grants of land or towns to royal relatives and officials as fiefs", "split": "test"}
+{"tid": "T05", "theme": "administration", "question": "Titles and insignia conferred on officials as marks of rank", "split": "test"}
+{"tid": "T06", "theme": "administration", "question": "Census taking and registration of households and service groups", "split": "test"}
+{"tid": "T07", "theme": "revenue", "question": "How was revenue collected in paddy, silver, or kind from the provinces?", "split": "dev"}
+{"tid": "T08", "theme": "revenue", "question": "Tolls, customs duties, and taxes on trade at river and frontier stations", "split": "test"}
+{"tid": "T09", "theme": "revenue", "question": "Complaints about excessive taxation or oppressive tax collectors", "split": "test"}
+{"tid": "T10", "theme": "revenue", "question": "Remission of taxes or relief granted to distressed people", "split": "dev"}
+{"tid": "T11", "theme": "law", "question": "Punishments imposed on officials for corruption, bribery, or neglect of duty", "split": "test"}
+{"tid": "T12", "theme": "law", "question": "How were theft, robbery, and banditry dealt with?", "split": "test"}
+{"tid": "T13", "theme": "law", "question": "Rules on court procedure, witnesses, oaths, and the settlement of lawsuits", "split": "test"}
+{"tid": "T14", "theme": "law", "question": "Royal pardons and amnesties for prisoners or rebels", "split": "test"}
+{"tid": "T15", "theme": "law", "question": "Disputes over inheritance, debts, or ownership of slaves", "split": "test"}
+{"tid": "T16", "theme": "military", "question": "How were troops levied and mobilised for campaigns?", "split": "test"}
+{"tid": "T17", "theme": "military", "question": "Siege warfare against walled towns and stockades", "split": "dev"}
+{"tid": "T18", "theme": "military", "question": "Supply of provisions, boats, and transport for armies on campaign", "split": "test"}
+{"tid": "T19", "theme": "military", "question": "Firearms, cannon, and musketeer units in the royal forces", "split": "dev"}
+{"tid": "T20", "theme": "military", "question": "Rewards given to soldiers and commanders after victories", "split": "test"}
+{"tid": "T21", "theme": "military", "question": "Desertion, flight, or failure of soldiers and commanders in battle", "split": "test"}
+{"tid": "T22", "theme": "religion", "question": "Royal regulation of the monkhood and enforcement of monastic discipline", "split": "dev"}
+{"tid": "T23", "theme": "religion", "question": "Construction, repair, and gilding of pagodas by the king", "split": "test"}
+{"tid": "T24", "theme": "religion", "question": "Donations of land, slaves, or goods to monasteries and pagodas", "split": "test"}
+{"tid": "T25", "theme": "religion", "question": "Orders forbidding the killing of animals or requiring observance of Buddhist precepts", "split": "test"}
+{"tid": "T26", "theme": "religion", "question": "Copying, examination, and study of Buddhist scriptures", "split": "dev"}
+{"tid": "T27", "theme": "religion", "question": "Worship of spirits or nats and the crown's attitude towards it", "split": "test"}
+{"tid": "T28", "theme": "ritual", "question": "Coronation ceremonies and the rituals of accession to the throne", "split": "test"}
+{"tid": "T29", "theme": "ritual", "question": "The ceremonies surrounding the capture or arrival of a white elephant", "split": "test"}
+{"tid": "T30", "theme": "ritual", "question": "Royal processions and the arrangement of participants", "split": "dev"}
+{"tid": "T31", "theme": "ritual", "question": "Court audiences and the protocol of paying homage to the king", "split": "test"}
+{"tid": "T32", "theme": "ritual", "question": "Festivals such as Thingyan and the end of Buddhist Lent at court", "split": "test"}
+{"tid": "T33", "theme": "ritual", "question": "Astrology, auspicious times, and omens in royal decisions", "split": "test"}
+{"tid": "T34", "theme": "diplomacy", "question": "Relations and exchange of envoys with China", "split": "test"}
+{"tid": "T35", "theme": "diplomacy", "question": "Dealings with the British and the East India Company", "split": "test"}
+{"tid": "T36", "theme": "diplomacy", "question": "Gifts and letters exchanged between the Burmese king and foreign rulers", "split": "test"}
+{"tid": "T37", "theme": "diplomacy", "question": "Relations with Siam and the Siamese wars", "split": "test"}
+{"tid": "T38", "theme": "frontier", "question": "How did Shan sawbwas show submission and loyalty to the Burmese king?", "split": "test"}
+{"tid": "T39", "theme": "frontier", "question": "Manipur and Manipuri captives in Burma", "split": "test"}
+{"tid": "T40", "theme": "frontier", "question": "Arakan under Burmese rule after its conquest", "split": "test"}
+{"tid": "T41", "theme": "frontier", "question": "Rebellions by Mons or other subject peoples and their suppression", "split": "test"}
+{"tid": "T42", "theme": "frontier", "question": "Chins, Kachins, Karens, and other hill peoples", "split": "dev"}
+{"tid": "T43", "theme": "economy", "question": "Regulation of weights, measures, and silver currency", "split": "dev"}
+{"tid": "T44", "theme": "economy", "question": "Foreign merchants and traders in the kingdom", "split": "test"}
+{"tid": "T45", "theme": "economy", "question": "Mines of rubies, silver, or other minerals under royal control", "split": "test"}
+{"tid": "T46", "theme": "economy", "question": "Timber extraction and forest resources for royal use", "split": "dev"}
+{"tid": "T47", "theme": "economy", "question": "Irrigation works, canals, tanks, and weirs", "split": "test"}
+{"tid": "T48", "theme": "labour", "question": "Obligations of hereditary royal service groups (ahmudan)", "split": "dev"}
+{"tid": "T49", "theme": "labour", "question": "Forced labour for construction of palaces, walls, and public works", "split": "test"}
+{"tid": "T50", "theme": "labour", "question": "People fleeing their service groups or villages and being returned", "split": "test"}
+{"tid": "T51", "theme": "succession", "question": "Disputes over succession and the fate of rival princes", "split": "test"}
+{"tid": "T52", "theme": "succession", "question": "Queens and royal women and their households", "split": "test"}
+{"tid": "T53", "theme": "succession", "question": "Appointment and role of the heir apparent", "split": "test"}
+{"tid": "T54", "theme": "capital", "question": "Founding or moving a royal capital", "split": "test"}
+{"tid": "T55", "theme": "capital", "question": "Fire prevention and fires in the capital", "split": "test"}
+{"tid": "T56", "theme": "society", "question": "Famine, scarcity of rice, and royal responses to hardship", "split": "test"}
+{"tid": "T57", "theme": "society", "question": "Rules on dress, housing, and sumptuary distinctions by rank", "split": "test"}
+{"tid": "T58", "theme": "society", "question": "Treatment of debt slaves and their redemption", "split": "test"}
+{"tid": "T59", "theme": "society", "question": "Gambling, drinking, and opium and their prohibition", "split": "test"}
+{"tid": "T60", "theme": "society", "question": "Medicine, physicians, and epidemic disease", "split": "dev"}

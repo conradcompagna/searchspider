@@ -1,0 +1,40 @@
+/* Shared by every Burmese Neural Reader page, including SearchSpider. */
+:root { --site-nav-height: 36px; }
+html { scrollbar-gutter: stable; }
+body.bnr-has-navigation { margin: 0; padding-top: var(--site-nav-height) !important; box-sizing: border-box; }
+body.bnr-chronicle .app-shell { height: calc(100vh - var(--site-nav-height)); }
+.bnr-navigation {
+  position: fixed; inset: 0 0 auto; z-index: 2000; height: var(--site-nav-height);
+  display: flex; align-items: center; justify-content: flex-end;
+  margin: 0; padding: 3px 18px; border: 0; border-bottom: 1px solid #3a444c;
+  background: #11171c; color: #eef2f4; box-shadow: none;
+  font: 400 13px/20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0; text-align: left; text-transform: none;
+}
+.bnr-navigation, .bnr-navigation * { box-sizing: border-box; }
+.bnr-navigation__links { display: flex; align-items: center; gap: 4px; margin: 0; padding: 0; }
+.bnr-navigation a, .bnr-navigation summary {
+  display: block; margin: 0; padding: 4px 9px; border: 0; border-radius: 3px;
+  background: transparent; color: #eef2f4; font: inherit; letter-spacing: 0;
+  text-decoration: none; text-transform: none; white-space: nowrap; cursor: pointer;
+}
+.bnr-navigation details { position: relative; margin: 0; padding: 0; border: 0; font: inherit; }
+.bnr-navigation summary { display: flex; align-items: center; gap: 7px; list-style: none; }
+.bnr-navigation summary::-webkit-details-marker { display: none; }
+.bnr-navigation summary::before { content: ""; width: 0; height: 0; border-left: 4px solid currentColor; border-top: 3px solid transparent; border-bottom: 3px solid transparent; }
+.bnr-navigation details[open] summary::before { transform: rotate(90deg); }
+.bnr-navigation a:hover, .bnr-navigation summary:hover, .bnr-navigation details[open] summary { background: #293139; color: #fff; }
+.bnr-navigation a:focus-visible, .bnr-navigation summary:focus-visible { outline: 2px solid #fff; outline-offset: 1px; }
+.bnr-navigation__menu { position: absolute; z-index: 1; right: 0; top: calc(100% + 4px); width: 260px; max-width: calc(100vw - 16px); margin: 0; padding: 7px; border: 1px solid #52616a; border-radius: 5px; background: #11171c; box-shadow: 0 8px 24px #0005; }
+.bnr-navigation .bnr-navigation__menu a { padding: 8px 10px; }
+.bnr-navigation__menu a[aria-current="page"] { background: #394247; color: #fff; }
+@media (max-width: 540px) {
+  .bnr-navigation { padding: 3px 8px; font-size: 12px; }
+  .bnr-navigation__links { gap: 2px; }
+  .bnr-navigation a, .bnr-navigation summary { padding: 4px 5px; }
+}
+@media (max-width: 440px) {
+  :root { --site-nav-height: 64px; }
+  .bnr-navigation__links { flex-wrap: wrap; justify-content: flex-end; }
+  .bnr-navigation details { order: 1; }
+}

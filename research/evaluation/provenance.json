@@ -1,0 +1,140 @@
+{
+  "prepared": "2026-09-28",
+  "description": "Selected evidence from original local evaluation artifacts. Relative source names identify the original experiment, not files promised in this smaller public package.",
+  "artifacts": [
+    {
+      "source": "eval/current_config_legacy_20260927/targeted/summary.json",
+      "public_artifact": "research/evaluation/targeted/summary.json",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "153cd15faa2d41b056a973cfcae4659d08eb0ea5c11ed00a2c671222efedbb53"
+    },
+    {
+      "source": "eval/current_config_legacy_20260927/targeted_comparison.csv",
+      "public_artifact": "research/evaluation/targeted/rank_comparison.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "5e4fc2e4138d0a50064cc801e9001b01541f118100aaa5b7a550c0980e9ffdd6"
+    },
+    {
+      "source": "eval/current_config_legacy_20260927/targeted/ranks.csv",
+      "public_artifact": "research/evaluation/targeted/ranks.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "ad78b69b4b1a8b07a10b62d3bfcf9e65f8e2e7c7683b372a7dfd0dedc030bb87"
+    },
+    {
+      "source": "eval/completed_thematic_20260927/summary.json",
+      "public_artifact": "research/evaluation/thematic/summary.json",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "77ec63e5c34ade3b3384271f8fbb09fab22238eb20d178e6abf18707026ff59c"
+    },
+    {
+      "source": "eval/completed_thematic_20260927/per_question_fixed.csv",
+      "public_artifact": "research/evaluation/thematic/per_question.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "9dc9569977f1eb898ca351d3462d5c5dac4cb92df8c480c6dcdc9f773832a556"
+    },
+    {
+      "source": "eval/completed_thematic_20260927/top10_all_grades.csv",
+      "public_artifact": "research/evaluation/thematic/top10_all_grades.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "66aff83ab6e30761efda1fc13978e0c29bcac593fd5c670b67db6e3d5705a07c"
+    },
+    {
+      "source": "eval/cpu_rerank_20260927/configurations.csv",
+      "public_artifact": "research/evaluation/reranker/configurations.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "bbec1805533d616c763409094bfd4cc1b00dd9b0bee15d8aa38f42358e3d1661"
+    },
+    {
+      "source": "eval/cpu_rerank_20260927/per_question.csv",
+      "public_artifact": "research/evaluation/reranker/per_question.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "c6303da0b2c395df522b42dbdbe00da64c452aa0b11dfbfa85837276ced5e970"
+    },
+    {
+      "source": "eval/cpu_rerank_20260927/timings.csv",
+      "public_artifact": "research/evaluation/reranker/timings.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "18b82024089044a8cb0e6dcb5ae574692614ba729edb36344e8117fe78398716"
+    },
+    {
+      "source": "eval/five_questions_20260927/reference/queries.jsonl",
+      "public_artifact": "research/evaluation/treasure_hunt/five_questions.jsonl",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "6614671a8afa1295e2e04ad0ec1fdb5b7cee9f372b8a8a2a0ee7fbe85cef805a"
+    },
+    {
+      "source": "eval/thematic/questions.jsonl",
+      "public_artifact": "research/evaluation/thematic/questions.jsonl",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "2e26390efe99bb513ec0fb319e0c539725fdc738cb5193960e59c0812b416ecd"
+    },
+    {
+      "source": "eval/graph_contribution_20260927/runs.csv",
+      "public_artifact": "research/evaluation/graph/runs.csv",
+      "transformation": "text content preserved; Git normalizes line endings to LF",
+      "source_sha256": "9bfaaa591844dd9d81aafaffddc87e0ea6836fa6a51de083c21d94467198f0ca"
+    },
+    {
+      "source": "eval/questions.jsonl",
+      "public_artifact": "research/evaluation/targeted/questions.jsonl",
+      "transformation": "JSONL normalized; no passage content in source file",
+      "source_sha256": "5fd9dd4a93e896b708e6f5c2d7d91208356c14597275f6aa6915efaf8c89601e"
+    },
+    {
+      "source": "eval/source_passages.jsonl",
+      "public_artifact": "research/evaluation/targeted/target_metadata.jsonl",
+      "transformation": "target IDs and provenance only; source text omitted",
+      "source_sha256": "5fa3eb9ed4fa556bcd2b39f29a346248490b27c86f6bf5ed5038198a04c98b42"
+    },
+    {
+      "source": "eval/completed_thematic_20260927/snapshot/grades_existing.jsonl",
+      "public_artifact": "research/evaluation/thematic/grades_existing.jsonl",
+      "transformation": "only IDs, source and grade; quotations/explanations omitted",
+      "source_sha256": "ea002116c785158311a6542c89fc2434d587c70528509f1f92643c9291b1e6fd"
+    },
+    {
+      "source": "eval/completed_thematic_20260927/snapshot/grades_webgpt.jsonl",
+      "public_artifact": "research/evaluation/thematic/grades_added.jsonl",
+      "transformation": "only IDs, source and grade; quotations/explanations omitted",
+      "source_sha256": "959307401a62b63496d95bddb099f390e14120f15f248afef83f865abd5521a1"
+    },
+    {
+      "source": "eval/cpu_rerank_20260927/metrics.json",
+      "public_artifact": "research/evaluation/treasure_hunt/summary.json",
+      "transformation": "baseline configuration extracted, aggregate pair counts derived",
+      "source_sha256": "1c5b5da2a01a7610b1dd25172dbc26a2e36a52724229f79783962dc777b0f342"
+    },
+    {
+      "source": "eval/cpu_rerank_20260927/reference_ranks.csv",
+      "public_artifact": "research/evaluation/treasure_hunt/reference_ranks.csv",
+      "transformation": "selected rows; original fields and values preserved",
+      "source_sha256": "f2326bf07f75a9e7bb947831396b3f988bf51a43b471c71552a8f7a4d03f266a"
+    },
+    {
+      "source": "eval/cpu_rerank_20260927/layers.csv",
+      "public_artifact": "research/evaluation/treasure_hunt/layers.csv",
+      "transformation": "selected rows; original fields and values preserved",
+      "source_sha256": "420b1dfbdbbed1afd8bf4753f8c95ce64d23e64c5eee745578d2991a41b27da9"
+    },
+    {
+      "source": "eval/recursive_once_20260927/metrics.json",
+      "public_artifact": "research/evaluation/treasure_hunt/reading_comparison.json",
+      "transformation": "aggregate counts and usage; logs, source text and prompts omitted",
+      "source_sha256": "dab2872360b865831e2826708ff255d65b4998c91fd8e1bf8f65fac81dcd4df9"
+    },
+    {
+      "source": "eval/cpu_rerank_20260927/numerical_validation.json",
+      "public_artifact": "research/evaluation/reranker/numerical_validation.json",
+      "transformation": "JSON normalized",
+      "source_sha256": "beb6380cf4cc1f331e55a054520e2cac79921cea327aa96839138410c47c5877"
+    }
+  ],
+  "omitted": [
+    "API request/response logs",
+    "owner credentials",
+    "full source passages and books",
+    "model files",
+    "infrastructure snapshots",
+    "local filesystem paths"
+  ]
+}

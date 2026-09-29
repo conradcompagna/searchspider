@@ -1,0 +1,10 @@
+run,topic,text_documents,graph_documents,graph_already_in_text,graph_only,pool_documents,reference_available,graph_known_relevant_or_partial,graph_only_known_relevant_or_partial,graph_only_unlabelled,graph_only_current_top50,graph_only_actual_gemini50,graph_only_current_top550,current_top50_identical_without_graph,graph_planning_calls,graph_input_tokens,graph_output_tokens,graph_thinking_tokens,log
+Q01,Labour,2527,8,8,0,2527,True,4,0,0,0,0,0,True,1,1816,293,0,eval/prompt_hybrid_20260927/full_searches/Q01/pipeline_log.json
+Q02,Water management,2428,46,45,1,2429,True,21,1,0,0,0,0,True,1,1817,349,0,eval/prompt_hybrid_20260927/full_searches/Q02/pipeline_log.json
+Q03,Money,2576,3,3,0,2576,True,3,0,0,0,0,0,True,1,1818,293,0,eval/prompt_hybrid_20260927/full_searches/Q03/pipeline_log.json
+Q04,Captives,2768,29,29,0,2768,True,4,0,0,0,0,0,True,1,1820,293,0,eval/prompt_hybrid_20260927/full_searches/Q04/pipeline_log.json
+Q05,Diplomacy,2420,100,100,0,2420,True,48,0,0,0,0,0,True,1,1817,293,0,eval/prompt_hybrid_20260927/full_searches/Q05/pipeline_log.json
+Coronation,Coronation,2460,75,74,1,2461,True,34,0,1,0,0,0,True,1,1815,253,0,eval/winning_config_coronation_20260927/full_search/pipeline_log.json
+Pegu,Pegu conquest,2596,27,26,1,2597,False,0,0,1,0,0,0,True,1,1834,349,0,logs\runs\20260927_190008_alaungpaya_s_conquest_of_the_mon_kingdom_of_pegu_and_the_sub_ec4bff17.json
+War,Third Anglo-Burmese War,2729,16,16,0,2729,False,0,0,0,0,0,0,True,1,1854,349,0,logs\runs\20260927_191122_the_causes_and_aftermath_of_the_third_anglo_burmese_war_grow_96cb386e.json
+Brahmins,Court Brahmins,1822,24,22,2,1824,False,0,0,2,0,0,0,True,1,1811,301,0,logs\runs\20260927_191510_the_role_of_brahmins_in_the_burmese_court_rituals_and_ceremo_fa9b5cb5.json

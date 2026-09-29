@@ -1,0 +1,1881 @@
+{
+  "evaluation_date": "2026-09-27",
+  "source": "eval/cpu_rerank_20260927/metrics.json",
+  "method": "Cached fixed initial rankings from six live agentic searches, no graph; baseline only, no cross-encoder.",
+  "reference_pairs": 2067,
+  "recovered_pairs": 1995,
+  "questions": {
+    "Q01": {
+      "reference_total": 515,
+      "pool_known": 491,
+      "pool_size": 2542,
+      "cuts": {
+        "50": {
+          "known": 44,
+          "full": 41,
+          "partial": 3,
+          "slots": 50,
+          "recall": 0.0854368932038835
+        },
+        "100": {
+          "known": 76,
+          "full": 69,
+          "partial": 7,
+          "slots": 100,
+          "recall": 0.14757281553398058
+        },
+        "150": {
+          "known": 101,
+          "full": 92,
+          "partial": 9,
+          "slots": 150,
+          "recall": 0.19611650485436893
+        },
+        "200": {
+          "known": 127,
+          "full": 113,
+          "partial": 14,
+          "slots": 200,
+          "recall": 0.24660194174757283
+        },
+        "250": {
+          "known": 149,
+          "full": 135,
+          "partial": 14,
+          "slots": 250,
+          "recall": 0.28932038834951457
+        },
+        "350": {
+          "known": 197,
+          "full": 181,
+          "partial": 16,
+          "slots": 350,
+          "recall": 0.3825242718446602
+        },
+        "450": {
+          "known": 235,
+          "full": 214,
+          "partial": 21,
+          "slots": 450,
+          "recall": 0.4563106796116505
+        },
+        "550": {
+          "known": 264,
+          "full": 239,
+          "partial": 25,
+          "slots": 550,
+          "recall": 0.512621359223301
+        },
+        "650": {
+          "known": 296,
+          "full": 269,
+          "partial": 27,
+          "slots": 650,
+          "recall": 0.574757281553398
+        },
+        "750": {
+          "known": 322,
+          "full": 292,
+          "partial": 30,
+          "slots": 750,
+          "recall": 0.625242718446602
+        },
+        "850": {
+          "known": 342,
+          "full": 310,
+          "partial": 32,
+          "slots": 850,
+          "recall": 0.6640776699029126
+        },
+        "950": {
+          "known": 363,
+          "full": 330,
+          "partial": 33,
+          "slots": 950,
+          "recall": 0.7048543689320388
+        },
+        "1000": {
+          "known": 370,
+          "full": 337,
+          "partial": 33,
+          "slots": 1000,
+          "recall": 0.7184466019417476
+        },
+        "1050": {
+          "known": 378,
+          "full": 345,
+          "partial": 33,
+          "slots": 1050,
+          "recall": 0.7339805825242719
+        },
+        "1500": {
+          "known": 436,
+          "full": 397,
+          "partial": 39,
+          "slots": 1500,
+          "recall": 0.8466019417475729
+        },
+        "2000": {
+          "known": 472,
+          "full": 429,
+          "partial": 43,
+          "slots": 2000,
+          "recall": 0.916504854368932
+        }
+      },
+      "slices": [
+        {
+          "start": 1,
+          "end": 50,
+          "known": 44,
+          "full": 41,
+          "slots": 50
+        },
+        {
+          "start": 51,
+          "end": 150,
+          "known": 57,
+          "full": 51,
+          "slots": 100
+        },
+        {
+          "start": 151,
+          "end": 250,
+          "known": 48,
+          "full": 43,
+          "slots": 100
+        },
+        {
+          "start": 251,
+          "end": 350,
+          "known": 48,
+          "full": 46,
+          "slots": 100
+        },
+        {
+          "start": 351,
+          "end": 450,
+          "known": 38,
+          "full": 33,
+          "slots": 100
+        },
+        {
+          "start": 451,
+          "end": 550,
+          "known": 29,
+          "full": 25,
+          "slots": 100
+        },
+        {
+          "start": 551,
+          "end": 650,
+          "known": 32,
+          "full": 30,
+          "slots": 100
+        },
+        {
+          "start": 651,
+          "end": 750,
+          "known": 26,
+          "full": 23,
+          "slots": 100
+        },
+        {
+          "start": 751,
+          "end": 850,
+          "known": 20,
+          "full": 18,
+          "slots": 100
+        },
+        {
+          "start": 851,
+          "end": 950,
+          "known": 21,
+          "full": 20,
+          "slots": 100
+        },
+        {
+          "start": 951,
+          "end": 1050,
+          "known": 15,
+          "full": 15,
+          "slots": 100
+        },
+        {
+          "start": 1051,
+          "end": 1150,
+          "known": 16,
+          "full": 15,
+          "slots": 100
+        },
+        {
+          "start": 1151,
+          "end": 1250,
+          "known": 9,
+          "full": 8,
+          "slots": 100
+        },
+        {
+          "start": 1251,
+          "end": 1350,
+          "known": 13,
+          "full": 12,
+          "slots": 100
+        },
+        {
+          "start": 1351,
+          "end": 1450,
+          "known": 15,
+          "full": 14,
+          "slots": 100
+        },
+        {
+          "start": 1451,
+          "end": 1550,
+          "known": 9,
+          "full": 7,
+          "slots": 100
+        },
+        {
+          "start": 1551,
+          "end": 1650,
+          "known": 9,
+          "full": 8,
+          "slots": 100
+        },
+        {
+          "start": 1651,
+          "end": 1750,
+          "known": 7,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 1751,
+          "end": 1850,
+          "known": 6,
+          "full": 6,
+          "slots": 100
+        },
+        {
+          "start": 1851,
+          "end": 1950,
+          "known": 6,
+          "full": 6,
+          "slots": 100
+        },
+        {
+          "start": 1951,
+          "end": 2050,
+          "known": 6,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 2051,
+          "end": 2150,
+          "known": 5,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 2151,
+          "end": 2250,
+          "known": 3,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 2251,
+          "end": 2350,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 2351,
+          "end": 2450,
+          "known": 3,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 2451,
+          "end": 2542,
+          "known": 4,
+          "full": 2,
+          "slots": 92
+        }
+      ],
+      "mean_known_rank": 663.7617107942973
+    },
+    "Q02": {
+      "reference_total": 149,
+      "pool_known": 148,
+      "pool_size": 2537,
+      "cuts": {
+        "50": {
+          "known": 42,
+          "full": 39,
+          "partial": 3,
+          "slots": 50,
+          "recall": 0.28187919463087246
+        },
+        "100": {
+          "known": 66,
+          "full": 55,
+          "partial": 11,
+          "slots": 100,
+          "recall": 0.4429530201342282
+        },
+        "150": {
+          "known": 84,
+          "full": 69,
+          "partial": 15,
+          "slots": 150,
+          "recall": 0.5637583892617449
+        },
+        "200": {
+          "known": 98,
+          "full": 80,
+          "partial": 18,
+          "slots": 200,
+          "recall": 0.6577181208053692
+        },
+        "250": {
+          "known": 103,
+          "full": 83,
+          "partial": 20,
+          "slots": 250,
+          "recall": 0.6912751677852349
+        },
+        "350": {
+          "known": 109,
+          "full": 88,
+          "partial": 21,
+          "slots": 350,
+          "recall": 0.7315436241610739
+        },
+        "450": {
+          "known": 112,
+          "full": 90,
+          "partial": 22,
+          "slots": 450,
+          "recall": 0.7516778523489933
+        },
+        "550": {
+          "known": 117,
+          "full": 94,
+          "partial": 23,
+          "slots": 550,
+          "recall": 0.785234899328859
+        },
+        "650": {
+          "known": 123,
+          "full": 98,
+          "partial": 25,
+          "slots": 650,
+          "recall": 0.825503355704698
+        },
+        "750": {
+          "known": 126,
+          "full": 101,
+          "partial": 25,
+          "slots": 750,
+          "recall": 0.8456375838926175
+        },
+        "850": {
+          "known": 128,
+          "full": 103,
+          "partial": 25,
+          "slots": 850,
+          "recall": 0.8590604026845637
+        },
+        "950": {
+          "known": 132,
+          "full": 106,
+          "partial": 26,
+          "slots": 950,
+          "recall": 0.8859060402684564
+        },
+        "1000": {
+          "known": 136,
+          "full": 109,
+          "partial": 27,
+          "slots": 1000,
+          "recall": 0.912751677852349
+        },
+        "1050": {
+          "known": 137,
+          "full": 110,
+          "partial": 27,
+          "slots": 1050,
+          "recall": 0.9194630872483222
+        },
+        "1500": {
+          "known": 145,
+          "full": 116,
+          "partial": 29,
+          "slots": 1500,
+          "recall": 0.9731543624161074
+        },
+        "2000": {
+          "known": 146,
+          "full": 117,
+          "partial": 29,
+          "slots": 2000,
+          "recall": 0.9798657718120806
+        }
+      },
+      "slices": [
+        {
+          "start": 1,
+          "end": 50,
+          "known": 42,
+          "full": 39,
+          "slots": 50
+        },
+        {
+          "start": 51,
+          "end": 150,
+          "known": 42,
+          "full": 30,
+          "slots": 100
+        },
+        {
+          "start": 151,
+          "end": 250,
+          "known": 19,
+          "full": 14,
+          "slots": 100
+        },
+        {
+          "start": 251,
+          "end": 350,
+          "known": 6,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 351,
+          "end": 450,
+          "known": 3,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 451,
+          "end": 550,
+          "known": 5,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 551,
+          "end": 650,
+          "known": 6,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 651,
+          "end": 750,
+          "known": 3,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 751,
+          "end": 850,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 851,
+          "end": 950,
+          "known": 4,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 951,
+          "end": 1050,
+          "known": 5,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 1051,
+          "end": 1150,
+          "known": 2,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 1151,
+          "end": 1250,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1251,
+          "end": 1350,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 1351,
+          "end": 1450,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 1451,
+          "end": 1550,
+          "known": 2,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 1551,
+          "end": 1650,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 1651,
+          "end": 1750,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 1751,
+          "end": 1850,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 1851,
+          "end": 1950,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 1951,
+          "end": 2050,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2051,
+          "end": 2150,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2151,
+          "end": 2250,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2251,
+          "end": 2350,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2351,
+          "end": 2450,
+          "known": 1,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2451,
+          "end": 2537,
+          "known": 0,
+          "full": 0,
+          "slots": 87
+        }
+      ],
+      "mean_known_rank": 313.2432432432432
+    },
+    "Q03": {
+      "reference_total": 556,
+      "pool_known": 530,
+      "pool_size": 2502,
+      "cuts": {
+        "50": {
+          "known": 43,
+          "full": 43,
+          "partial": 0,
+          "slots": 50,
+          "recall": 0.07733812949640288
+        },
+        "100": {
+          "known": 83,
+          "full": 82,
+          "partial": 1,
+          "slots": 100,
+          "recall": 0.14928057553956833
+        },
+        "150": {
+          "known": 118,
+          "full": 115,
+          "partial": 3,
+          "slots": 150,
+          "recall": 0.21223021582733814
+        },
+        "200": {
+          "known": 152,
+          "full": 149,
+          "partial": 3,
+          "slots": 200,
+          "recall": 0.2733812949640288
+        },
+        "250": {
+          "known": 181,
+          "full": 176,
+          "partial": 5,
+          "slots": 250,
+          "recall": 0.3255395683453237
+        },
+        "350": {
+          "known": 241,
+          "full": 231,
+          "partial": 10,
+          "slots": 350,
+          "recall": 0.43345323741007197
+        },
+        "450": {
+          "known": 287,
+          "full": 271,
+          "partial": 16,
+          "slots": 450,
+          "recall": 0.5161870503597122
+        },
+        "550": {
+          "known": 321,
+          "full": 303,
+          "partial": 18,
+          "slots": 550,
+          "recall": 0.5773381294964028
+        },
+        "650": {
+          "known": 359,
+          "full": 337,
+          "partial": 22,
+          "slots": 650,
+          "recall": 0.64568345323741
+        },
+        "750": {
+          "known": 383,
+          "full": 360,
+          "partial": 23,
+          "slots": 750,
+          "recall": 0.6888489208633094
+        },
+        "850": {
+          "known": 406,
+          "full": 381,
+          "partial": 25,
+          "slots": 850,
+          "recall": 0.7302158273381295
+        },
+        "950": {
+          "known": 427,
+          "full": 402,
+          "partial": 25,
+          "slots": 950,
+          "recall": 0.7679856115107914
+        },
+        "1000": {
+          "known": 433,
+          "full": 408,
+          "partial": 25,
+          "slots": 1000,
+          "recall": 0.7787769784172662
+        },
+        "1050": {
+          "known": 439,
+          "full": 413,
+          "partial": 26,
+          "slots": 1050,
+          "recall": 0.789568345323741
+        },
+        "1500": {
+          "known": 489,
+          "full": 456,
+          "partial": 33,
+          "slots": 1500,
+          "recall": 0.8794964028776978
+        },
+        "2000": {
+          "known": 518,
+          "full": 481,
+          "partial": 37,
+          "slots": 2000,
+          "recall": 0.9316546762589928
+        }
+      },
+      "slices": [
+        {
+          "start": 1,
+          "end": 50,
+          "known": 43,
+          "full": 43,
+          "slots": 50
+        },
+        {
+          "start": 51,
+          "end": 150,
+          "known": 75,
+          "full": 72,
+          "slots": 100
+        },
+        {
+          "start": 151,
+          "end": 250,
+          "known": 63,
+          "full": 61,
+          "slots": 100
+        },
+        {
+          "start": 251,
+          "end": 350,
+          "known": 60,
+          "full": 55,
+          "slots": 100
+        },
+        {
+          "start": 351,
+          "end": 450,
+          "known": 46,
+          "full": 40,
+          "slots": 100
+        },
+        {
+          "start": 451,
+          "end": 550,
+          "known": 34,
+          "full": 32,
+          "slots": 100
+        },
+        {
+          "start": 551,
+          "end": 650,
+          "known": 38,
+          "full": 34,
+          "slots": 100
+        },
+        {
+          "start": 651,
+          "end": 750,
+          "known": 24,
+          "full": 23,
+          "slots": 100
+        },
+        {
+          "start": 751,
+          "end": 850,
+          "known": 23,
+          "full": 21,
+          "slots": 100
+        },
+        {
+          "start": 851,
+          "end": 950,
+          "known": 21,
+          "full": 21,
+          "slots": 100
+        },
+        {
+          "start": 951,
+          "end": 1050,
+          "known": 12,
+          "full": 11,
+          "slots": 100
+        },
+        {
+          "start": 1051,
+          "end": 1150,
+          "known": 10,
+          "full": 8,
+          "slots": 100
+        },
+        {
+          "start": 1151,
+          "end": 1250,
+          "known": 12,
+          "full": 10,
+          "slots": 100
+        },
+        {
+          "start": 1251,
+          "end": 1350,
+          "known": 13,
+          "full": 12,
+          "slots": 100
+        },
+        {
+          "start": 1351,
+          "end": 1450,
+          "known": 12,
+          "full": 10,
+          "slots": 100
+        },
+        {
+          "start": 1451,
+          "end": 1550,
+          "known": 6,
+          "full": 6,
+          "slots": 100
+        },
+        {
+          "start": 1551,
+          "end": 1650,
+          "known": 7,
+          "full": 6,
+          "slots": 100
+        },
+        {
+          "start": 1651,
+          "end": 1750,
+          "known": 9,
+          "full": 7,
+          "slots": 100
+        },
+        {
+          "start": 1751,
+          "end": 1850,
+          "known": 5,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 1851,
+          "end": 1950,
+          "known": 4,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 1951,
+          "end": 2050,
+          "known": 4,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 2051,
+          "end": 2150,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2151,
+          "end": 2250,
+          "known": 2,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2251,
+          "end": 2350,
+          "known": 5,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 2351,
+          "end": 2450,
+          "known": 1,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2451,
+          "end": 2502,
+          "known": 0,
+          "full": 0,
+          "slots": 52
+        }
+      ],
+      "mean_known_rank": 571.1754716981133
+    },
+    "Q04": {
+      "reference_total": 213,
+      "pool_known": 202,
+      "pool_size": 2713,
+      "cuts": {
+        "50": {
+          "known": 26,
+          "full": 25,
+          "partial": 1,
+          "slots": 50,
+          "recall": 0.12206572769953052
+        },
+        "100": {
+          "known": 41,
+          "full": 38,
+          "partial": 3,
+          "slots": 100,
+          "recall": 0.19248826291079812
+        },
+        "150": {
+          "known": 54,
+          "full": 48,
+          "partial": 6,
+          "slots": 150,
+          "recall": 0.2535211267605634
+        },
+        "200": {
+          "known": 61,
+          "full": 54,
+          "partial": 7,
+          "slots": 200,
+          "recall": 0.2863849765258216
+        },
+        "250": {
+          "known": 75,
+          "full": 64,
+          "partial": 11,
+          "slots": 250,
+          "recall": 0.352112676056338
+        },
+        "350": {
+          "known": 87,
+          "full": 71,
+          "partial": 16,
+          "slots": 350,
+          "recall": 0.4084507042253521
+        },
+        "450": {
+          "known": 99,
+          "full": 82,
+          "partial": 17,
+          "slots": 450,
+          "recall": 0.4647887323943662
+        },
+        "550": {
+          "known": 106,
+          "full": 88,
+          "partial": 18,
+          "slots": 550,
+          "recall": 0.49765258215962443
+        },
+        "650": {
+          "known": 110,
+          "full": 91,
+          "partial": 19,
+          "slots": 650,
+          "recall": 0.5164319248826291
+        },
+        "750": {
+          "known": 126,
+          "full": 101,
+          "partial": 25,
+          "slots": 750,
+          "recall": 0.5915492957746479
+        },
+        "850": {
+          "known": 135,
+          "full": 108,
+          "partial": 27,
+          "slots": 850,
+          "recall": 0.6338028169014085
+        },
+        "950": {
+          "known": 143,
+          "full": 113,
+          "partial": 30,
+          "slots": 950,
+          "recall": 0.6713615023474179
+        },
+        "1000": {
+          "known": 149,
+          "full": 118,
+          "partial": 31,
+          "slots": 1000,
+          "recall": 0.6995305164319249
+        },
+        "1050": {
+          "known": 150,
+          "full": 119,
+          "partial": 31,
+          "slots": 1050,
+          "recall": 0.704225352112676
+        },
+        "1500": {
+          "known": 176,
+          "full": 139,
+          "partial": 37,
+          "slots": 1500,
+          "recall": 0.8262910798122066
+        },
+        "2000": {
+          "known": 196,
+          "full": 156,
+          "partial": 40,
+          "slots": 2000,
+          "recall": 0.92018779342723
+        }
+      },
+      "slices": [
+        {
+          "start": 1,
+          "end": 50,
+          "known": 26,
+          "full": 25,
+          "slots": 50
+        },
+        {
+          "start": 51,
+          "end": 150,
+          "known": 28,
+          "full": 23,
+          "slots": 100
+        },
+        {
+          "start": 151,
+          "end": 250,
+          "known": 21,
+          "full": 16,
+          "slots": 100
+        },
+        {
+          "start": 251,
+          "end": 350,
+          "known": 12,
+          "full": 7,
+          "slots": 100
+        },
+        {
+          "start": 351,
+          "end": 450,
+          "known": 12,
+          "full": 11,
+          "slots": 100
+        },
+        {
+          "start": 451,
+          "end": 550,
+          "known": 7,
+          "full": 6,
+          "slots": 100
+        },
+        {
+          "start": 551,
+          "end": 650,
+          "known": 4,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 651,
+          "end": 750,
+          "known": 16,
+          "full": 10,
+          "slots": 100
+        },
+        {
+          "start": 751,
+          "end": 850,
+          "known": 9,
+          "full": 7,
+          "slots": 100
+        },
+        {
+          "start": 851,
+          "end": 950,
+          "known": 8,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 951,
+          "end": 1050,
+          "known": 7,
+          "full": 6,
+          "slots": 100
+        },
+        {
+          "start": 1051,
+          "end": 1150,
+          "known": 6,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 1151,
+          "end": 1250,
+          "known": 9,
+          "full": 8,
+          "slots": 100
+        },
+        {
+          "start": 1251,
+          "end": 1350,
+          "known": 5,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1351,
+          "end": 1450,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1451,
+          "end": 1550,
+          "known": 8,
+          "full": 7,
+          "slots": 100
+        },
+        {
+          "start": 1551,
+          "end": 1650,
+          "known": 3,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1651,
+          "end": 1750,
+          "known": 3,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 1751,
+          "end": 1850,
+          "known": 3,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1851,
+          "end": 1950,
+          "known": 6,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 1951,
+          "end": 2050,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2051,
+          "end": 2150,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2151,
+          "end": 2250,
+          "known": 2,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2251,
+          "end": 2350,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2351,
+          "end": 2450,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2451,
+          "end": 2550,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2551,
+          "end": 2650,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 2651,
+          "end": 2713,
+          "known": 0,
+          "full": 0,
+          "slots": 63
+        }
+      ],
+      "mean_known_rank": 673.1980198019802
+    },
+    "Q05": {
+      "reference_total": 402,
+      "pool_known": 398,
+      "pool_size": 2481,
+      "cuts": {
+        "50": {
+          "known": 41,
+          "full": 40,
+          "partial": 1,
+          "slots": 50,
+          "recall": 0.10199004975124377
+        },
+        "100": {
+          "known": 78,
+          "full": 75,
+          "partial": 3,
+          "slots": 100,
+          "recall": 0.19402985074626866
+        },
+        "150": {
+          "known": 109,
+          "full": 105,
+          "partial": 4,
+          "slots": 150,
+          "recall": 0.27114427860696516
+        },
+        "200": {
+          "known": 136,
+          "full": 132,
+          "partial": 4,
+          "slots": 200,
+          "recall": 0.3383084577114428
+        },
+        "250": {
+          "known": 157,
+          "full": 151,
+          "partial": 6,
+          "slots": 250,
+          "recall": 0.39054726368159204
+        },
+        "350": {
+          "known": 200,
+          "full": 193,
+          "partial": 7,
+          "slots": 350,
+          "recall": 0.4975124378109453
+        },
+        "450": {
+          "known": 223,
+          "full": 216,
+          "partial": 7,
+          "slots": 450,
+          "recall": 0.554726368159204
+        },
+        "550": {
+          "known": 249,
+          "full": 240,
+          "partial": 9,
+          "slots": 550,
+          "recall": 0.6194029850746269
+        },
+        "650": {
+          "known": 271,
+          "full": 260,
+          "partial": 11,
+          "slots": 650,
+          "recall": 0.6741293532338308
+        },
+        "750": {
+          "known": 291,
+          "full": 278,
+          "partial": 13,
+          "slots": 750,
+          "recall": 0.7238805970149254
+        },
+        "850": {
+          "known": 304,
+          "full": 290,
+          "partial": 14,
+          "slots": 850,
+          "recall": 0.7562189054726368
+        },
+        "950": {
+          "known": 315,
+          "full": 301,
+          "partial": 14,
+          "slots": 950,
+          "recall": 0.7835820895522388
+        },
+        "1000": {
+          "known": 318,
+          "full": 304,
+          "partial": 14,
+          "slots": 1000,
+          "recall": 0.7910447761194029
+        },
+        "1050": {
+          "known": 322,
+          "full": 308,
+          "partial": 14,
+          "slots": 1050,
+          "recall": 0.8009950248756219
+        },
+        "1500": {
+          "known": 366,
+          "full": 348,
+          "partial": 18,
+          "slots": 1500,
+          "recall": 0.9104477611940298
+        },
+        "2000": {
+          "known": 387,
+          "full": 367,
+          "partial": 20,
+          "slots": 2000,
+          "recall": 0.9626865671641791
+        }
+      },
+      "slices": [
+        {
+          "start": 1,
+          "end": 50,
+          "known": 41,
+          "full": 40,
+          "slots": 50
+        },
+        {
+          "start": 51,
+          "end": 150,
+          "known": 68,
+          "full": 65,
+          "slots": 100
+        },
+        {
+          "start": 151,
+          "end": 250,
+          "known": 48,
+          "full": 46,
+          "slots": 100
+        },
+        {
+          "start": 251,
+          "end": 350,
+          "known": 43,
+          "full": 42,
+          "slots": 100
+        },
+        {
+          "start": 351,
+          "end": 450,
+          "known": 23,
+          "full": 23,
+          "slots": 100
+        },
+        {
+          "start": 451,
+          "end": 550,
+          "known": 26,
+          "full": 24,
+          "slots": 100
+        },
+        {
+          "start": 551,
+          "end": 650,
+          "known": 22,
+          "full": 20,
+          "slots": 100
+        },
+        {
+          "start": 651,
+          "end": 750,
+          "known": 20,
+          "full": 18,
+          "slots": 100
+        },
+        {
+          "start": 751,
+          "end": 850,
+          "known": 13,
+          "full": 12,
+          "slots": 100
+        },
+        {
+          "start": 851,
+          "end": 950,
+          "known": 11,
+          "full": 11,
+          "slots": 100
+        },
+        {
+          "start": 951,
+          "end": 1050,
+          "known": 7,
+          "full": 7,
+          "slots": 100
+        },
+        {
+          "start": 1051,
+          "end": 1150,
+          "known": 14,
+          "full": 13,
+          "slots": 100
+        },
+        {
+          "start": 1151,
+          "end": 1250,
+          "known": 12,
+          "full": 11,
+          "slots": 100
+        },
+        {
+          "start": 1251,
+          "end": 1350,
+          "known": 8,
+          "full": 8,
+          "slots": 100
+        },
+        {
+          "start": 1351,
+          "end": 1450,
+          "known": 6,
+          "full": 4,
+          "slots": 100
+        },
+        {
+          "start": 1451,
+          "end": 1550,
+          "known": 9,
+          "full": 9,
+          "slots": 100
+        },
+        {
+          "start": 1551,
+          "end": 1650,
+          "known": 5,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 1651,
+          "end": 1750,
+          "known": 4,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1751,
+          "end": 1850,
+          "known": 3,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 1851,
+          "end": 1950,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1951,
+          "end": 2050,
+          "known": 5,
+          "full": 5,
+          "slots": 100
+        },
+        {
+          "start": 2051,
+          "end": 2150,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 2151,
+          "end": 2250,
+          "known": 3,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 2251,
+          "end": 2350,
+          "known": 1,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2351,
+          "end": 2450,
+          "known": 2,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 2451,
+          "end": 2481,
+          "known": 0,
+          "full": 0,
+          "slots": 31
+        }
+      ],
+      "mean_known_rank": 552.821608040201
+    },
+    "Coronation": {
+      "reference_total": 232,
+      "pool_known": 226,
+      "pool_size": 2269,
+      "cuts": {
+        "50": {
+          "known": 38,
+          "full": 32,
+          "partial": 6,
+          "slots": 50,
+          "recall": 0.16379310344827586
+        },
+        "100": {
+          "known": 64,
+          "full": 49,
+          "partial": 15,
+          "slots": 100,
+          "recall": 0.27586206896551724
+        },
+        "150": {
+          "known": 87,
+          "full": 64,
+          "partial": 23,
+          "slots": 150,
+          "recall": 0.375
+        },
+        "200": {
+          "known": 108,
+          "full": 76,
+          "partial": 32,
+          "slots": 200,
+          "recall": 0.46551724137931033
+        },
+        "250": {
+          "known": 116,
+          "full": 78,
+          "partial": 38,
+          "slots": 250,
+          "recall": 0.5
+        },
+        "350": {
+          "known": 128,
+          "full": 85,
+          "partial": 43,
+          "slots": 350,
+          "recall": 0.5517241379310345
+        },
+        "450": {
+          "known": 146,
+          "full": 96,
+          "partial": 50,
+          "slots": 450,
+          "recall": 0.6293103448275862
+        },
+        "550": {
+          "known": 154,
+          "full": 99,
+          "partial": 55,
+          "slots": 550,
+          "recall": 0.6637931034482759
+        },
+        "650": {
+          "known": 162,
+          "full": 102,
+          "partial": 60,
+          "slots": 650,
+          "recall": 0.6982758620689655
+        },
+        "750": {
+          "known": 171,
+          "full": 105,
+          "partial": 66,
+          "slots": 750,
+          "recall": 0.7370689655172413
+        },
+        "850": {
+          "known": 176,
+          "full": 107,
+          "partial": 69,
+          "slots": 850,
+          "recall": 0.7586206896551724
+        },
+        "950": {
+          "known": 183,
+          "full": 109,
+          "partial": 74,
+          "slots": 950,
+          "recall": 0.7887931034482759
+        },
+        "1000": {
+          "known": 185,
+          "full": 109,
+          "partial": 76,
+          "slots": 1000,
+          "recall": 0.7974137931034483
+        },
+        "1050": {
+          "known": 186,
+          "full": 110,
+          "partial": 76,
+          "slots": 1050,
+          "recall": 0.8017241379310345
+        },
+        "1500": {
+          "known": 210,
+          "full": 115,
+          "partial": 95,
+          "slots": 1500,
+          "recall": 0.9051724137931034
+        },
+        "2000": {
+          "known": 224,
+          "full": 122,
+          "partial": 102,
+          "slots": 2000,
+          "recall": 0.9655172413793104
+        }
+      },
+      "slices": [
+        {
+          "start": 1,
+          "end": 50,
+          "known": 38,
+          "full": 32,
+          "slots": 50
+        },
+        {
+          "start": 51,
+          "end": 150,
+          "known": 49,
+          "full": 32,
+          "slots": 100
+        },
+        {
+          "start": 151,
+          "end": 250,
+          "known": 29,
+          "full": 14,
+          "slots": 100
+        },
+        {
+          "start": 251,
+          "end": 350,
+          "known": 12,
+          "full": 7,
+          "slots": 100
+        },
+        {
+          "start": 351,
+          "end": 450,
+          "known": 18,
+          "full": 11,
+          "slots": 100
+        },
+        {
+          "start": 451,
+          "end": 550,
+          "known": 8,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 551,
+          "end": 650,
+          "known": 8,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 651,
+          "end": 750,
+          "known": 9,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 751,
+          "end": 850,
+          "known": 5,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 851,
+          "end": 950,
+          "known": 7,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 951,
+          "end": 1050,
+          "known": 3,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 1051,
+          "end": 1150,
+          "known": 10,
+          "full": 3,
+          "slots": 100
+        },
+        {
+          "start": 1151,
+          "end": 1250,
+          "known": 5,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1251,
+          "end": 1350,
+          "known": 4,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 1351,
+          "end": 1450,
+          "known": 4,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 1451,
+          "end": 1550,
+          "known": 2,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 1551,
+          "end": 1650,
+          "known": 5,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1651,
+          "end": 1750,
+          "known": 2,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1751,
+          "end": 1850,
+          "known": 3,
+          "full": 2,
+          "slots": 100
+        },
+        {
+          "start": 1851,
+          "end": 1950,
+          "known": 2,
+          "full": 1,
+          "slots": 100
+        },
+        {
+          "start": 1951,
+          "end": 2050,
+          "known": 1,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2051,
+          "end": 2150,
+          "known": 0,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2151,
+          "end": 2250,
+          "known": 2,
+          "full": 0,
+          "slots": 100
+        },
+        {
+          "start": 2251,
+          "end": 2269,
+          "known": 0,
+          "full": 0,
+          "slots": 19
+        }
+      ],
+      "mean_known_rank": 478.91150442477874
+    }
+  },
+  "totals": {
+    "50": 234,
+    "100": 408,
+    "150": 553,
+    "200": 682,
+    "250": 781,
+    "350": 962,
+    "450": 1102,
+    "550": 1211,
+    "650": 1321,
+    "750": 1419,
+    "850": 1491,
+    "950": 1563,
+    "1000": 1591,
+    "1050": 1612,
+    "1500": 1822,
+    "2000": 1943
+  },
+  "bins": [
+    234,
+    319,
+    228,
+    181,
+    140,
+    109,
+    110,
+    98,
+    72,
+    72,
+    49,
+    58,
+    49,
+    44,
+    40,
+    36,
+    29,
+    26,
+    20,
+    20,
+    17,
+    9,
+    12,
+    9,
+    8,
+    4,
+    2,
+    0
+  ]
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connect SearchSpider · Language Engine</title>
+<style>
+body{margin:0;background:#f5f3ef;color:#242c2a;font:16px/1.6 system-ui,sans-serif}main{max-width:440px;margin:8vh auto;padding:32px;background:white;border:1px solid #dfdfd8;border-radius:16px}h1{margin:0;font-size:30px}a{color:#275d56}label{display:block;margin:14px 0 4px}input,button{box-sizing:border-box;width:100%;padding:12px;font:inherit;border:1px solid #bbc8c2;border-radius:6px}button{margin-top:18px;background:#275d56;color:white;cursor:pointer}.small{font-size:14px;color:#5c6762}.links{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px}.google{display:block;text-align:center;border:1px solid #bbc8c2;padding:10px;border-radius:6px}#message{white-space:pre-line}footer{text-align:center;margin:30px}
+</style></head><body><main>
+<p class="small">LANGUAGE ENGINE × KONBAUNG DIGITAL HISTORY PROJECT</p>
+<h1>Connect to SearchSpider</h1>
+<p>Connect your Pro subscription to use its existing token budget for agentic searches, deeper reading and follow-ups. Public SearchSpider also has a small shared daily free allowance, with no account required.</p>
+<form id="account-form"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required>
+<label for="password">Password</label><input id="password" type="password" autocomplete="current-password" minlength="8" required>
+<button id="submit" type="submit">Sign in and continue</button></form>
+<p id="message" role="status"></p>
+<a class="google" href="{{ google_url }}">Continue with Google</a>
+<div class="links"><a href="#" id="signup">Create account</a><a href="#" id="reset">Reset password</a></div>
+<p class="small">After signing in, you return to Burmese Neural Reader. Passwords stay on Language Engine. Basic search needs no account.</p>
+<a href="https://burmeseneuralreader.com/searchspider/">Back to SearchSpider</a>
+</main><footer><a href="/">Language Engine</a> · <a href="https://burmeseneuralreader.com/">Burmese Neural Reader</a></footer>
+<script>
+let mode='login';const message=document.getElementById('message');
+document.getElementById('signup').onclick=(e)=>{e.preventDefault();mode=mode==='login'?'signup':'login';document.getElementById('submit').textContent=mode==='signup'?'Create account':'Sign in and continue';e.target.textContent=mode==='signup'?'Already have an account? Sign in':'Create account';document.getElementById('password').autocomplete=mode==='signup'?'new-password':'current-password';message.textContent='';};
+document.getElementById('account-form').onsubmit=async(e)=>{e.preventDefault();const button=document.getElementById('submit');button.disabled=true;message.textContent='';try{const r=await fetch('/auth/'+mode,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:document.getElementById('email').value,password:document.getElementById('password').value})});const j=await r.json();if(!r.ok)throw Error(j.error||'Unable to sign in.');if(mode==='login')location.reload();else message.textContent='Check your email and verify your account, then return here and sign in.';}catch(err){message.textContent=err.message;}finally{button.disabled=false;}};
+document.getElementById('reset').onclick=async(e)=>{e.preventDefault();const email=document.getElementById('email');if(!email.reportValidity())return;try{await fetch('/auth/forgot-password',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email.value})});message.textContent='If this account exists, a reset link will be emailed to you.';}catch{message.textContent='Unable to send reset request. Try again.';}};
+</script></body></html>
